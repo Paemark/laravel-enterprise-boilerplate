@@ -1,6 +1,6 @@
 # 🚀 Laravel 13 + Filament 5 + Next.js 16 Enterprise Boilerplate
 
-> A robust, production-grade monorepo boilerplate combining a headless **Laravel 13** API, an elegant **Filament 5** admin panel, and a lightning-fast **Next.js 16** (React 19) frontend — all wired together with stateful cookie authentication via **Laravel Sanctum** and fine-grained access control through **Spatie Roles & Permissions**.
+> A production-grade monorepo boilerplate combining a headless **Laravel 13** API, an elegant **Filament 5** admin panel, and a lightning-fast **Next.js 16** (React 19) frontend — all wired together with stateful cookie authentication via **Laravel Sanctum** and fine-grained access control through **Spatie Roles & Permissions**.
 
 ![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?style=flat-square&logo=laravel)
 ![Filament](https://img.shields.io/badge/Filament-5-FDA4AF?style=flat-square&logo=laravel)
@@ -207,56 +207,6 @@ After running the seeders, the following accounts are available:
 
 ---
 
-## 📁 Project Structure
-
-```
-laravel-nextjs-boilerplate/
-├── backend/                          # Laravel 13 API + Filament 5
-│   ├── app/
-│   │   ├── Filament/                 # Admin panel resources & pages
-│   │   │   ├── Resources/
-│   │   │   └── Widgets/
-│   │   ├── Http/
-│   │   │   ├── Controllers/
-│   │   │   └── Middleware/
-│   │   ├── Models/
-│   │   └── Policies/                 # Spatie permission policies
-│   ├── config/
-│   │   ├── permission.php            # Spatie config
-│   │   └── sanctum.php               # Sanctum config
-│   ├── database/
-│   │   ├── migrations/
-│   │   └── seeders/
-│   │       └── RolesPermissionsSeeder.php
-│   ├── routes/
-│   │   ├── api.php                   # Public + auth API routes
-│   │   └── web.php                   # Sanctum SPA routes
-│   └── tests/                        # Pest tests
-│
-├── frontend/                         # Next.js 16 (React 19)
-│   ├── src/
-│   │   ├── app/                      # App Router pages
-│   │   │   ├── (auth)/               # Login, register, forgot-password
-│   │   │   ├── (dashboard)/          # Protected user routes
-│   │   │   └── api/                  # Route handlers (proxies)
-│   │   ├── components/
-│   │   │   ├── ui/                   # shadcn/ui components
-│   │   │   └── layouts/
-│   │   ├── lib/
-│   │   │   ├── api.ts                # Axios instance with CSRF
-│   │   │   ├── auth.ts               # Auth hooks (useAuth)
-│   │   │   └── permissions.ts        # Permission helpers
-│   │   └── stores/                   # Zustand stores
-│   ├── middleware.ts                   # Route protection
-│   └── next.config.ts
-│
-├── docker/                           # Docker configs (optional)
-├── .github/workflows/                # CI/CD pipelines
-└── README.md
-```
-
----
-
 ## 🛡️ Roles & Permissions
 
 Roles and permissions are managed via **Spatie Laravel Permission** and seeded in `RolesPermissionsSeeder`:
@@ -392,5 +342,5 @@ This project is open-sourced software licensed under the [MIT license](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ for the Laravel & Next.js community
-</p># laravel-enterprise-boilerplate
+  Made with ❤️ by Paemark Designers for the Laravel, React & Next.js community
+</p>
