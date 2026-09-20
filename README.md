@@ -327,7 +327,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/) and enfor
 
 ## 📄 License
 
-This project is open-sourced software licensed under the [MIT license](LICENSE).
+This project is open-sourced software licensed under the [MIT license](LICENSE.md).
 
 ---
 
