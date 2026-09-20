@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+    --pmd-green: #65aa61;
+    --pmd-green-dark: #579253;
+    --pmd-green-soft: #edf6ec;
+
+    --pmd-navy: #131d25;
+    --pmd-gray: #686a6c;
+
+    --pmd-bg: #f9faf9;
+    --pmd-surface: #ffffff;
+    --pmd-border: #e7e9e7;
+
+    --pmd-text: #131d25;
+    --pmd-muted: #686a6c;
+
+    --pmd-danger: #c94b4b;
+    --pmd-danger-soft: #fdf0f0;
+
+    --pmd-radius-sm: 0.5rem;
+    --pmd-radius-md: 0.75rem;
+    --pmd-radius-lg: 1rem;
+
+    --pmd-shadow-sm: 0 1px 2px rgb(19 29 37 / 0.04);
+    --pmd-shadow-md: 0 8px 30px rgb(19 29 37 / 0.06);
+
+    --background: var(--pmd-bg);
+    --foreground: var(--pmd-text);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: var(--pmd-bg);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--pmd-bg);
+    color: var(--pmd-text);
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--pmd-green);
+    color: var(--pmd-surface);
+}
+
+:focus-visible {
+    outline: 2px solid var(--pmd-green);
+    outline-offset: 2px;
+}
+
+.pmd-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.pmd-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.pmd-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgb(19 29 37 / 0.15);
+}
+
+.pmd-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(19 29 37 / 0.25);
+}
