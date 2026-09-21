@@ -103,6 +103,10 @@ php artisan filament:install --panels
 # Link the storage directory
 php artisan storage:link
 
+# Install React & NextJS dependencies
+cd frontend
+npm install axios
+npm install swr
 
 ```
 
